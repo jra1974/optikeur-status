@@ -3,8 +3,8 @@
 # Aangedreven door GitHub Actions & GitHub Pages
 # ==============================================================================
 
-owner: UW_GITHUB_GEBRUIKERSNAAM # Vervang door uw GitHub gebruikersnaam of organisatie
-repo: optikeur-status           # De naam van uw repository
+owner: jra1974
+repo: optikeur-status
 
 sites:
   - name: OptiKeur Webplatform
@@ -34,7 +34,7 @@ status-website:
     - title: Security & SLA Dossier
       href: https://optikeur.nl/security.html
 
-# Uptime schema (elke 5 minuten)
+# Uptime schema (elke 5 minuten automatische controle)
 workflowSchedule:
   graphs: "0 0 * * *"
   responseTime: "0 23 * * *"
@@ -44,6 +44,5 @@ workflowSchedule:
   updates: "0 3 * * *"
   uptime: "*/5 * * * *"
 
-# Notificaties (optioneel, standaard via GitHub Issues)
 assignees:
-  - UW_GITHUB_GEBRUIKERSNAAM
+  - jra1974
